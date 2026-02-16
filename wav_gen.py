@@ -1,3 +1,6 @@
+# WAV generation logic adapted from Alessandro Cudazzo's MIT-licensed sine_wave.py
+# https://gist.github.com/alessandrocuda/9df6043b79e68e3ddc1c262eddcfa015
+
 from PyQt6.QtWidgets import QApplication, QMainWindow, QFileDialog, QWidget, QFormLayout, QSpinBox, QLineEdit
 from PyQt6 import QtGui
 import sys, math, wave, struct, os
