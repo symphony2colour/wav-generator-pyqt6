@@ -1,7 +1,16 @@
+
 # WAV Gen (PyQt6 GUI)
+
+<p align="center">
+  <img alt="type" src="https://img.shields.io/badge/type-PyQt6%20GUI-blue">
+  <img alt="audio" src="https://img.shields.io/badge/audio-WAV%20tone%20generator-blueviolet">
+  <img alt="python" src="https://img.shields.io/badge/python-3.10%2B-orange">
+  <img alt="license" src="https://img.shields.io/badge/license-MIT-green">
+</p>
 
 A small **PyQt6 desktop app** that generates a **mono sine-wave WAV** file.  
 Set sample rate, duration, frequency, volume, choose an output folder, and export a `.wav`.
+
 
 ## What’s inside
 - `wav_gen.py` — main application (loads the UI, handles events, generates the WAV output)
