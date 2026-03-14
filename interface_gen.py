@@ -49,11 +49,10 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "Wav Gen"))
         self.btnBrowse.setText(_translate("MainWindow", "Chose directory"))
         self.btnBrowse2.setText(_translate("MainWindow", "Generate WAV"))
-        self.lineOne.setText(_translate("MainWindow", "SAMPLE RATE (Example: 44100)"))
-        self.lineTwo.setText(_translate("MainWindow", "NUMBER OF SECONDS (Must be > 0)"))
-        self.lineThree.setText(_translate("MainWindow", "FREQUENCY IN HZ (range 1...20000Hz)"))
-        self.lineFour.setText(_translate("MainWindow", "VOLUME (Float value between 1.0 and 10.0)"))
+        self.lineOne.setPlaceholderText("SAMPLE RATE (Example: 44100)")
+        self.lineTwo.setPlaceholderText("NUMBER OF SECONDS (Must be > 0)")
+        self.lineThree.setPlaceholderText("FREQUENCY IN HZ (range 1...20000Hz)")
+        self.lineFour.setPlaceholderText("VOLUME (Float value between 1.0 and 10.0)")
         self.lineFive.setText(_translate("MainWindow", "Filename"))
         
-
 
