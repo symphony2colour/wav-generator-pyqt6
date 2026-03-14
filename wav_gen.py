@@ -3,6 +3,7 @@
 
 from PyQt6.QtWidgets import QApplication, QMainWindow, QFileDialog, QWidget, QFormLayout, QSpinBox, QLineEdit
 from PyQt6 import QtGui
+from PyQt6.QtGui import QIcon
 import sys, math, wave, struct, os
 from interface_gen import Ui_MainWindow
 
@@ -83,13 +84,10 @@ class ExampleApp(QMainWindow, Ui_MainWindow):
             self.listWidget.addItem("[+] Exception Occured!")
 
         
-        self.lineOne.setText("SAMPLE RATE (Example: 44100)")
-        self.lineTwo.setText("NUMBER OF SECONDS (Must be > 0)")
-        self.lineThree.setText("FREQUENCY IN HZ (range 1...20000Hz)")
-        self.lineFour.setText("VOLUME (Float value between 1.0 and 10.0)")
-
 
 if __name__ == '__main__':
     qApp = QApplication(sys.argv)
     form = ExampleApp()
+    form.setWindowIcon(QIcon("wav.ico"))
+    form.show()
     sys.exit(qApp.exec())
